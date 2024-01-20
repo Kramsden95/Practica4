@@ -1,13 +1,13 @@
-public class Persona {
+public class Mascota {
     //Atributos
     private String nombre;
     private int edad;
-    private String DNI;
+    private String animal;
 
     //Get y Set
 
     /**
-     * getNombre() consulta el nombre de la Persona guardada en el Main.
+     * getNombre() consulta el nombre de la Mascota guardada en el Main.
      * @return devuelve el nombre en cuestion.
      */
     public String getNombre(){
@@ -23,7 +23,7 @@ public class Persona {
     }
 
     /**
-     * getEdad() consulta la edad de la Persona guardada en el Main.
+     * getEdad() consulta la edad de la Mascota guardada en el Main.
      * @return devuelve la edad en cuestion.
      */
     public int getEdad(){
@@ -39,27 +39,27 @@ public class Persona {
     }
 
     /**
-     * getDNI() consulta el DNI de la Persona guardada en el Main.
-     * @return devuelve el DNI en cuestion.
+     * getAnimal() consulta el animal de la Mascota guardada en el Main.
+     * @return devuelve el animal en cuestion.
      */
-    public String getDNI(){
-        return DNI;
+    public String getAnimal(){
+        return animal;
     }
 
     /**
-     * this.DNI refiere al private String DNI de arriba.
-     * @param DNI cambia this.DNI al nuevo valor.
+     * this.animal refiere al private String animal de arriba.
+     * @param animal cambia this.animal al nuevo valor.
      */
-    public void setDNI(String DNI){
-        this.DNI = DNI;
+    public void setDNI(String animal){
+        this.animal = animal;
     }
 
     //Constructores
-    public Persona(){
+    public Mascota(){
     }
-    public Persona(String nuevoNombre, int nuevaEdad, String nuevoDNI){
+    public Mascota(String nuevoNombre, int nuevaEdad, String nuevoAnimal){
         nombre = nuevoNombre;
         edad = nuevaEdad;
-        DNI = nuevoDNI;
+        animal = nuevoAnimal;
     }
 }

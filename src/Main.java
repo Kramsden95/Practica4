@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        Persona Tom = new Persona("Tom",30,"X8500000P");
+        Mascota Kartoshka = new Mascota("Kartoshka",9,"Gato");
 
-        int edad = 28;
-        String nombre = "Kane";
-        if (Tom.getEdad() > edad){
-            System.out.println(Tom.getNombre() + " es mayor que " + nombre);
-        } else if (Tom.getEdad() == edad){
-            System.out.println(Tom.getNombre() + " y " + nombre + " tienen la misma edad");
+        int edad = 5;
+        String nombre = "Kasper";
+        if (Kartoshka.getEdad() > edad){
+            System.out.println(Kartoshka.getNombre() + " es mayor que " + nombre);
+        } else if (Kartoshka.getEdad() == edad){
+            System.out.println(Kartoshka.getNombre() + " y " + nombre + " tienen la misma edad");
         } else {
-            System.out.println(Tom.getNombre() + " es menor que " + nombre);
+            System.out.println(Kartoshka.getNombre() + " es menor que " + nombre);
         }
     }
 }
