@@ -15,11 +15,11 @@ public class Persona {
     }
 
     /**
-     * setNombre(String nuevoNombre) cambia el valor Nombre de la Persona en cuestion.
-     * @param nuevoNombre cambia el valor del Nombre.
+     * this.nombre refiere al private String nombre de arriba.
+     * @param nombre cambia this.nombre al nuevo valor.
      */
-    public void setNombre(String nuevoNombre){
-        nombre = nuevoNombre;
+    public void setNombre(String nombre){
+        this.nombre = nombre;
     }
 
     /**
@@ -31,11 +31,11 @@ public class Persona {
     }
 
     /**
-     * setEdad(String nuevaEdad) cambia el valor Edad de la Persona en cuestion.
-     * @param nuevaEdad cambia el valor del Edad.
+     * this.edad refiere al private int edad de arriba.
+     * @param edad cambia this.edad al nuevo valor.
      */
-    public void setEdad(int nuevaEdad){
-        edad = nuevaEdad;
+    public void setEdad(int edad){
+        this.edad = edad;
     }
 
     /**
@@ -47,11 +47,11 @@ public class Persona {
     }
 
     /**
-     * setDNI(String nuevaEdad) cambia el valor DNI de la Persona en cuestion.
-     * @param nuevoDNI cambia el valor del DNI.
+     * this.DNI refiere al private String DNI de arriba.
+     * @param DNI cambia this.DNI al nuevo valor.
      */
-    public void setDNI(String nuevoDNI){
-        DNI = nuevoDNI;
+    public void setDNI(String DNI){
+        this.DNI = DNI;
     }
 
     //Constructores
