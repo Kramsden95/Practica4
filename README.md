@@ -6,22 +6,22 @@ Primero creamos una cuenta en Github y descargamos git en nuestro pc.
 Una vez hecho la cuenta y haberlo vinculado entre Intellij, git y github empezamos a trabajar en la practica.
 Abrimos nuestra practica 3 dentro de Intellij e abrimos la terminal.
 Dentro de la terminal picamos los siguientes comandos: 
-- Este comando nos inicia el repositorio.
+Este comando nos inicia el repositorio.
  > git init
-- Este comando agrega todos nuestros ficheros y directorios de nuestro proyecto al repositorio.
+Este comando agrega todos nuestros ficheros y directorios de nuestro proyecto al repositorio.
 > git add .
-- Este comando hace el primer commit e indicamos que se llame "v1.0.0"
+Este comando hace el primer commit e indicamos que se llame "v1.0.0"
 > git commit -m "v1.0.0" 
-- Este comando empuja nuestro commit de local al github.
+Este comando empuja nuestro commit de local al github.
 > git push
   
 Ahora creamos una rama para ir haciendo cambios con estos comandos:
   
-  - Este comando nos crea la rama nueva.
+Este comando nos crea la rama nueva.
  > git branch rama1
- - Este comando nos cambia de rama. En nuestro caso, de master a rama1
+Este comando nos cambia de rama. En nuestro caso, de master a rama1
  > git checkout rama1
-- Este comando es lo mismo que el push pero sube la rama al github haciendo que exista alli tambien.
+Este comando es lo mismo que el push pero sube la rama al github haciendo que exista alli tambien.
 > git push --set-upstream origin rama1
 
 Primera modificacion de la practica 3.  En Intellij vamos a la clase Persona y comentamos en JavaDoc a todos los Gets y Sets.
