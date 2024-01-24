@@ -1,3 +1,5 @@
+package GitPackage;
+
 public class Mascota {
     //Atributos
     private String nombre;
@@ -7,7 +9,7 @@ public class Mascota {
     //Get y Set
 
     /**
-     * getNombre() consulta el nombre de la Mascota guardada en el Main.
+     * getNombre() consulta el nombre de la GitPackage.Mascota guardada en el Main.
      * @return devuelve el nombre en cuestion.
      */
     public String getNombre(){
@@ -23,7 +25,7 @@ public class Mascota {
     }
 
     /**
-     * getEdad() consulta la edad de la Mascota guardada en el Main.
+     * getEdad() consulta la edad de la GitPackage.Mascota guardada en el Main.
      * @return devuelve la edad en cuestion.
      */
     public int getEdad(){
@@ -39,7 +41,7 @@ public class Mascota {
     }
 
     /**
-     * getAnimal() consulta el animal de la Mascota guardada en el Main.
+     * getAnimal() consulta el animal de la GitPackage.Mascota guardada en el Main.
      * @return devuelve el animal en cuestion.
      */
     public String getAnimal(){
