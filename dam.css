@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    color: aliceblue;
+    /*Default text color on full page*/
+    background-color: rgb(0, 0, 0);
+    /*in case the BG image doesnt show*/
+    background-image: url(images/bgimg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /*keeps it in the same place when you stretch the window*/
+    height: 100vh;
+    width: 100vw;
+}
+
+/*
+HEADER
+*/
+
+/*
+Shader Layers for the header background image
+*/
+.headerLayer2 {
+    background-color: rgb(0, 0, 0, .75);
+    /*darken*/
+}
+
+.headerLayer {
+    background-color: rgb(63, 255, 255, .2);
+    /*blue colour*/
+    padding: 20px;
+    /*so that the header BG image matches the header size*/
+}
+
+/*
+Header background image
+*/
+header {
+    background-image: url(images/Tech_Header_BG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: fixed;
+    /*makes sure it stays when you scroll down the page*/
+    top: 0;
+    /*make sure it stays at the top*/
+    width: 100vw;
+}
+
+/*
+The full header contents grouped
+(Logo -- Sections)
+*/
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+}
+
+/*The header Logo and "K-TECH INC."*/
+.headerKTI {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+
+.headerKTI img {
+    margin-right: 20px;
+}
+
+.headerKTI span {
+    color: rgb(98, 125, 186);
+}
+
+/*
+The header menu items 
+(Home/Services/Projects/About/Contact)
+*/
+.headerMenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    margin-right: 10%;
+}
+
+/*
+The header menu items individually
+and their links
+*/
+.headerMenu li {
+    padding: 10px;
+    margin: 5px;
+    font-size: 22px;
+    border: 2px solid transparent;
+    /*this is for the border that appears with hover so that the size doesnt change*/
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header li:hover {
+    background-color: rgb(138, 43, 226, .2);
+    border: 2px solid aliceblue;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+/*The main body of the front page into Sections*/
+.sections {
+    background-color: rgb(0, 0, 0, .7);
+    /*making the background image darker*/
+}
+
+/*
+First section (Home)
+The first part you see
+(The Logo/My name/My title/My portfolio)
+*/
+#Home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+    margin-top: 115px;
+}
+
+/*("FULL STACK DEVELOPER")*/
+#Home h1 {
+    font-size: 30px;
+}
+
+/*Portfolio*/
+#Home a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#Home .Portfolio {
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.254);
+    border: 1px solid crimson;
+    padding: 10px 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#Home .Portfolio:hover {
+    background-color: rgb(138, 43, 226, .2);
+    border: 1px solid aliceblue;
+    transition: 0.5s;
+    color: crimson;
+    border-radius: 10px;
+}
+
+/*Next Section*/
+#Services {
+    text-align: center;
+    background-color: rgba(119, 136, 153, 0.768);
+    padding: 50px 10% 75px 10%;
+}
+
+.servicesCards {
+    display: flex;
+    justify-content: center;
+}
+
+.servicesHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20%;
+}
+
+.servicesHeader h1 {
+    padding: 0 40px;
+    border: solid 1px rgb(0, 255, 255, .2);
+    background-color: rgb(64, 137, 137);
+    box-shadow: 0 2px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    font-size: 50px;
+    color: rgb(145, 10, 120);
+    text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+}
+
+.servicesHeader p {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: solid 1px black;
+    border-radius: 20px;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 0 2%;
+    padding: 30px;
+    background-color: rgb(64, 137, 137);
+}
+
+.card img {
+    width: 75px;
+}
+
+.card h2 {
+    font-size: 25px;
+    color: rgb(145, 10, 120);
+    text-shadow: .5px .5px .5px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+}
+
+.card p {
+    padding: 20px 0 0 0;
+}
+
+#Projects {
+    text-align: center;
+    background-color: rgba(112, 132, 132, 0.694);
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.projectsHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20%;
+}
+
+.projectsHeader h1 {
+    padding: 0 40px;
+    border: solid 1px rgb(0, 255, 255, .2);
+    background-color: rgb(64, 137, 137);
+    box-shadow: 0 2px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    font-size: 50px;
+    color: rgb(145, 10, 120);
+    text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+}
+
+.projectDisplay {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: solid 1px black;
+    border-radius: 20px;
+    min-width: 300px;
+    max-width: 700px;
+    margin: 50px 2%;
+    background-color: rgb(64, 137, 137);
+}
+
+.projectDisplay div {
+    display: flex;
+    flex-basis: calc(50% - 0px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectDescription {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.projectDescription h2 {
+    font-size: 35px;
+    color: rgb(145, 10, 120);
+    text-shadow: .5px .5px .5px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+    margin-bottom: 20px;
+}
+
+.projectDescription h3 {
+    font-size: 25px;
+    color: rgb(145, 10, 120);
+    text-shadow: .5px .5px .5px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+    margin-bottom: 10px;
+}
+
+.projectDescription p {
+    padding: 0 20px;
+}
+
+.projectImage1 img {
+    width: 350px;
+    border-radius: 0 20px 0 0;
+}
+
+.projectImage2 img {
+    width: 350px;
+    border-radius: 0 0 0 20px;
+}
+
+#About {
+    text-align: center;
+    background-color: rgba(119, 136, 153, 0.768);
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+}
+
+.aboutImage img {
+    border-radius: 80px;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20% 20px 20px;
+}
+
+.aboutHeader h1 {
+    padding: 0 40px;
+    margin: 0 0 25px 0;
+    border: solid 1px rgb(0, 255, 255, .2);
+    background-color: rgb(64, 137, 137);
+    box-shadow: 0 2px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    font-size: 50px;
+    color: rgb(145, 10, 120);
+    text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+}
+
+.aboutMe h3{
+    font-size: 25px;
+    color: rgb(145, 10, 120);
+    text-shadow: .5px .5px .5px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+    margin-bottom: 10px;
+}
+
+.aboutMe p{
+    width: 500px;
+    padding: 0 20px 50px 20px;
+}
+
+#About .aboutText a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#About .resume {
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.254);
+    border: 1px solid crimson;
+    padding: 10px 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#About .resume:hover {
+    background-color: rgb(138, 43, 226, .2);
+    border: 1px solid aliceblue;
+    transition: 0.5s;
+    border-radius: 10px;
+    color: crimson;
+}
+
+#Contact {
+    text-align: center;
+    background-color: rgba(112, 132, 132, 0.694);
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.contactHeader h2 {
+    padding: 0 40px;
+    margin: 0 0 25px 0;
+    border: solid 1px rgb(0, 255, 255, .2);
+    background-color: rgb(64, 137, 137);
+    box-shadow: 0 2px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    font-size: 50px;
+    color: rgb(145, 10, 120);
+    text-shadow: 1px 2px 2px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+}
+
+.jobApply {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: solid 1px black;
+    border-radius: 20px;
+    min-width: 800px;
+    max-width: 700px;
+    margin: 50px 2%;
+    background-color: rgb(64, 137, 137);
+}
+
+.jobApply h2{
+    font-size: 25px;
+    color: rgb(145, 10, 120);
+    text-shadow: .5px .5px .5px rgb(174, 0, 255), 0 0 1em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+    margin-bottom: 10px;
+}
+
+.jobApply .columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobApply .columna {
+    flex: 1;
+}
+
+.dataEntry label{
+    margin-bottom: 10px;
+}
